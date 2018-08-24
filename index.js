@@ -11,7 +11,8 @@ var mdlinks = require('./lib/md-links');
 
 const [,, ...args] = process.argv
 mdlinks.parametroRuta(args[0])
-
+//mdlinks.comprueba_extension(args[0])
+//console.log(mdlinks.leerArch(args);
 
 //console.log(`Add ${a} + ${b} ${calculator.add(args[0])}`.yellow);
 
