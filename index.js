@@ -4,15 +4,26 @@
 // sudo npm install -g
 // console.log(process.argv);para capturar el argumento que pasan en la terminal al lado de md.liks
 
-// const colors = require('colors');
+const mdlinks = require('./lib/md-links').mdlinks;
 
-const mdlinks = require('./lib/md-links');
 
+// el primero y el segundo se ignora esta vacio y el tercero se guarda 
 const [,, ...args] = process.argv;
-mdlinks.parametroRuta(args[0]);
 
+mdlinks(args[0]).then((links)=>{
+// console.log(links)
+}).catch(err =>{
+  // console.log(err)
+})
+// const rutaAbsoluta = mdlinks.parametroRuta(args[0]);
+// const comprobExte = mdlinks.compruebaExtension(rutaAbsoluta); */
+// //const leerArch = mdlinks.leerArch(comprobExte);
+// const validat = args[1];
+// console.log(validat);
+// console.log(comprobExte);
+// console.log(leerArch);
 
-
+// console.log(rutaAbsoluta)
 /* mdLinks(rutaAbsot)
   .then(links => {
     // => [{ href, text, file }]
@@ -25,5 +36,5 @@ mdLinks(rutaAbsot, { validate: true })
   })
   .catch(console.error);
 // isabsolut
-// cwd indica la carpeta donde esta parada en la terminal y entrega la ruta absoluta
+// processcwd indica la carpeta donde esta parada en la terminal y entrega la ruta absoluta
 // buffer , readfile*/
