@@ -1,11 +1,9 @@
-// const suma = require('../lib/md-links');
-// test('adds 1 + 2 to equal 3', () => {
-//   expect(suma(1, 2)).toBe(3);
+const mdlinks = require('../lib/md-links');
+// npm run test
 
-// });
-
-//npm run test
-
-test('deberia ser un link', () => {
-  expect(parametroRuta('')).toBe(true);
- });
+// test('deberia ser un link', () => {
+//   expect(verificarlinks('links')).toBe('https://github.com/stevekane/promise-it-wont-hurt');
+//  });
+test('deberia verificar el archivo .md', () => {
+  expect(mdlinks.compruebaExtension('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md')).toBe(true);
+});
