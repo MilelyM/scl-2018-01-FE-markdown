@@ -6,10 +6,9 @@
 
 const mdlinks = require('./lib/md-links').mdlinks;
 if (require.main === module) {
-  const options = {};
-
   // el primero y el segundo se ignora esta vacio y el tercero se guarda 
   const [,, ...args] = process.argv;
+  const options = {};
   // 
   if (args.includes('--validate')) options.validate = true;
   mdlinks(args[0], options).then((links)=>{
