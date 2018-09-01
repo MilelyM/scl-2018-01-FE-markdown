@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 // para que leea  el bin y me permita usar el md-link por consolas
-'use strict'; // es como un eslintr pero para ejecucion
+// 'use strict'; // es como un eslintr pero para ejecucion
 // sudo npm install -g
 // console.log(process.argv);para capturar el argumento que pasan en la terminal al lado de md.liks
 
@@ -18,7 +18,7 @@ if (require.main === module) {
       if (options.validate) {
         console.log(`${(element.file.cyan)} : ${(element.line)} : ${element.href} : ${element.text} : ${element.status} :${element.statusText.yellow}`);
       } else {
-        console.log(`${element.file} : ${element.line} : ${element.href} : ${element.text} `);
+        console.log(`${element.file.magenta} : ${element.line} : ${element.href.cyan} : ${element.text} `);
       }
     });
   }).catch(err =>{
