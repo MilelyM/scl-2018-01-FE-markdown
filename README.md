@@ -1,7 +1,7 @@
 # Markdown buscador links
  Te permite extraer los links solo de archivos Markdown
 
- npm i md-links-search
+npm i md-links-search-md
 ## Preámbulo
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
