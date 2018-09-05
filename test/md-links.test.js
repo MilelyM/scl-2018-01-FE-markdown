@@ -1,13 +1,29 @@
 const mdlinks = require('../lib/md-links');
 // npm run test
 
-// test('deberia ser un link', () => {
-//   expect(verificarlinks('links')).toBe('https://github.com/stevekane/promise-it-wont-hurt');
-//  });
 test('deberia verificar el archivo .md', () => {
   expect(mdlinks.compruebaExtension('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md')).toBe(true);
 });
 
-test('the data is peanut butter', () => {
+test('deberia ser ruta absoluta', () => {
   expect(mdlinks.parametroRuta('README.md')).toBe('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md');
+});
+test('deberia obtener una respuesta', () => {
+  expect.assertions(1);
+  return expect(mdlinks.leerArch2('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md')).resolves.toBeTruthy();
+});
+
+test('deberia obtener una respuesta ', () => {
+  expect.assertions(1);
+  return expect(mdlinks.extraerLinea('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md')).resolves.toBeTruthy();
+});  
+
+
+test('deberia obtener una respuestar ', () => {
+  expect.assertions(1);
+  return expect(mdlinks.verificarlinks('https://.google.com')).resolves.toBeTruthy();
+}); 
+test('deberia obtener una respuesta ', () => {
+  expect.assertions(1);
+  return expect(mdlinks.mdlinks('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md', '--validate')).resolves.toBeTruthy();
 });
