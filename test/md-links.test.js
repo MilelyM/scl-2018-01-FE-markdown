@@ -21,9 +21,10 @@ test('deberia obtener una respuesta ', () => {
 
 test('deberia obtener una respuestar ', () => {
   expect.assertions(1);
-  return expect(mdlinks.verificarlinks('https://.google.com')).resolves.toBeTruthy();
+  return expect(mdlinks.verificarlinks('https://developers.google.com/v8/')).resolves.toBeTruthy();
 }); 
 test('deberia obtener una respuesta ', () => {
   expect.assertions(1);
   return expect(mdlinks.mdlinks('/home/laboratoria/Escritorio/proyectos/scl-2018-01-FE-markdown/README.md', '--validate')).resolves.toBeTruthy();
 });
+
