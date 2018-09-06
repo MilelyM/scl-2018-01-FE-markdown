@@ -29,10 +29,6 @@ Módulo instalable via :`npm install -g https://github.com/MilelyM/scl-2018-01-F
 o
 - [link del módulo publicado en npm](https://www.npmjs.com/package/md-links-search-md) 
 
-
-### VERSIÓN
-- Versión.0.0.2.
-
 ### USO
 
 - Documentación de la Librería (Features, link de Demo, test, etc...).
@@ -40,6 +36,8 @@ o
 
 Y todo lo relevante para que cualquier developer que quiera usar tu librería pueda hacerlo sin inconvenientes
 
+### VERSIÓN
+- Versión.0.0.2.
 
 ### CLI (Línea de comando)
 

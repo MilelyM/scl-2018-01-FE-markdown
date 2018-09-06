@@ -5,19 +5,19 @@
 // console.log(process.argv);para capturar el argumento que pasan en la terminal al lado de md.liks
 
 const mdlinks = require('./lib/md-links').mdlinks;
+// Cuando un archivo se ejecuta directamente desde Node.js, require.mainse establece en su module. Eso significa que es posible determinar si un archivo se ha ejecutado directamente mediante pruebas require.main === module.
+
 if (require.main === module) {
-  // el primero y el segundo se ignora esta vacio y el tercero se guarda 
   const [,, ...args] = process.argv;
   const options = {};
-  // 
   if (args.includes('--validate')) options.validate = true;
   mdlinks(args[0], options).then((links)=>{
   // console.log(links)
     links.forEach(element => {
       if (options.validate) {
-        console.log(`${(element.file.cyan)} : ${(element.line)} : ${element.href} : ${element.text} : ${element.status} :${element.statusText.yellow}`);
+       // console.log(`${(element.file.cyan)} : ${(element.line)} : ${element.href} : ${element.text} : ${element.status} :${element.statusText.yellow}`);
       } else {
-        console.log(`${element.file.magenta} : ${element.line} : ${element.href.cyan} : ${element.text} `);
+        //console.log(`${element.file.magenta} : ${element.line} : ${element.href.cyan} : ${element.text} `);
       }
     });
   }).catch(err =>{
