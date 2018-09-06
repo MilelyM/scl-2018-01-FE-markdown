@@ -19,7 +19,7 @@ test('deberia obtener una respuesta ', () => {
 });  
 
 
-test('deberia obtener una respuestar ', () => {
+test('deberia obtener una respuesta ', () => {
   expect.assertions(1);
   return expect(mdlinks.verificarlinks('https://developers.google.com/v8/')).resolves.toBeTruthy();
 }); 
