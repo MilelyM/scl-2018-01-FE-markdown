@@ -15,9 +15,9 @@ if (require.main === module) {
   // console.log(links)
     links.forEach(element => {
       if (options.validate) {
-       // console.log(`${(element.file.cyan)} : ${(element.line)} : ${element.href} : ${element.text} : ${element.status} :${element.statusText.yellow}`);
+        console.log(`${(element.file.cyan)} : ${(element.line)} : ${element.href} : ${element.text} : ${element.status} :${element.statusText.yellow}`);
       } else {
-        //console.log(`${element.file.magenta} : ${element.line} : ${element.href.cyan} : ${element.text} `);
+        console.log(`${element.file.magenta} : ${element.line} : ${element.href.cyan} : ${element.text} `);
       }
     });
   }).catch(err =>{
