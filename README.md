@@ -4,7 +4,6 @@ en formato `Markdown` usando Node.js, para verificar los links que contengan, qu
 la información que se quiere compartir.
 
 ![Markdown](https://user-images.githubusercontent.com/39282714/47372707-ac71bc80-d6c0-11e8-9103-abc622dd1039.jpeg)
-
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
 
