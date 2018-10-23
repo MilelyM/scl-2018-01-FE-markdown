@@ -10,7 +10,7 @@ en formato Markdown usando Node.js, para verificar los links que contengan, que 
 npm i md-links-search-md
 https://www.npmjs.com/package/md-links-search-md
 
- ## ¿Que es Markdown?
+ ### ¿Que es Markdown?
 
 [Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
 ligero muy popular entre developers. Es usado en muchísimas plataformas que
@@ -18,7 +18,7 @@ manejan texto plano (GitHub, foros, blogs, ...), y es muy común
 encontrar varios archivos en ese formato en cualquier tipo de repositorio
 (empezando por el tradicional `README.md`).
 
-## ¿Que es Node.js?
+### ¿Que es Node.js?
 
 [Node.js](https://nodejs.org/es/) es un entorno de ejecución para JavaScript
 construido con el [motor de JavaScript V8 de Chrome](https://developers.google.com/v8/).
@@ -27,7 +27,7 @@ ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder intera
 el sistema operativo, sistema de archivos, redes, etc...
 
 
-## INSTALACIÓN
+### INSTALACIÓN
 ```sh
 Módulo instalable via :`npm install -g https://github.com/MilelyM/scl-2018-01-FE-markdown` 
 ```
