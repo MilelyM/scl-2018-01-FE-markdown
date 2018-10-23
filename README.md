@@ -1,6 +1,6 @@
 # Markdown buscador links
 Es una Herramienta  que lee y analiza archivos
-en formato `Markdown` usando [Node.js](https://nodejs.org/), para verificar los links que contengan, que muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
+en formato `Markdown` usando Node.js, para verificar los links que contengan, que muchas veces están rotos o ya no son válidos y eso perjudica mucho el valor de
 la información que se quiere compartir.
 
 ![Markdown](https://user-images.githubusercontent.com/39282714/47372707-ac71bc80-d6c0-11e8-9103-abc622dd1039.jpeg)
